@@ -1,0 +1,135 @@
+version: "3"
+
+services:
+  busybox_1:
+    image: busybox:latest
+    network_mode: "bridge"
+    container_name: busybox_1
+    ports:
+      - "7001:7070"
+      - "8001:80"
+    volumes:
+      - ./data:/tmp
+    tty: true
+    environment:
+      TZ: "Asia/Shanghai"
+    command: /tmp/start.sh
+
+  busybox_2:
+    image: busybox:latest
+    network_mode: "bridge"
+    container_name: busybox_2
+    ports:
+      - "7002:7070"
+      - "8002:80"
+    volumes:
+      - ./data:/tmp
+
+    tty: true
+    environment:
+      TZ: "Asia/Shanghai"
+    command: /tmp/start.sh
+
+  busybox_3:
+    image: busybox:latest
+    network_mode: "bridge"
+    container_name: busybox_3
+    ports:
+      - "7003:7070"
+      - "8003:80"
+    volumes:
+      - ./data:/tmp
+
+    tty: true
+    environment:
+      TZ: "Asia/Shanghai"
+    command: /tmp/start.sh
+
+  busybox_4:
+    image: busybox:latest
+    network_mode: "bridge"
+    container_name: busybox_4
+    ports:
+      - "7004:7070"
+      - "8004:80"
+    volumes:
+      - ./data:/tmp
+
+    tty: true
+    environment:
+      TZ: "Asia/Shanghai"
+    command: /tmp/start.sh
+
+  busybox_5:
+    image: busybox:latest
+    network_mode: "bridge"
+    container_name: busybox_5
+    ports:
+      - "7005:7070"
+      - "8005:80"
+    volumes:
+      - ./data:/tmp
+
+    tty: true
+    environment:
+      TZ: "Asia/Shanghai"
+    command: /tmp/start.sh
+
+  busybox_6:
+    image: busybox:latest
+    network_mode: "bridge"
+    container_name: busybox_6
+    ports:
+      - "7006:7070"
+      - "8006:80"
+    volumes:
+      - ./data:/tmp
+
+    tty: true
+    environment:
+      TZ: "Asia/Shanghai"
+    command: /tmp/start.sh
+  busybox_7:
+    image: busybox:latest
+    network_mode: "bridge"
+    container_name: busybox_7
+    ports:
+      - "7007:7070"
+      - "8007:80"
+    volumes:
+      - ./data:/tmp
+
+    tty: true
+    environment:
+      TZ: "Asia/Shanghai"
+    command: /tmp/start.sh
+
+  busybox_8:
+    image: busybox:latest
+    network_mode: "bridge"
+    container_name: busybox_8
+    ports:
+      - "7008:7070"
+      - "8008:80"
+    volumes:
+      - ./data:/tmp
+
+    tty: true
+    environment:
+      TZ: "Asia/Shanghai"
+    command: /tmp/start.sh
+
+  busybox_9:
+    image: busybox:latest
+    network_mode: "bridge"
+    container_name: busybox_9
+    ports:
+      - "7009:7070"
+      - "8009:80"
+    volumes:
+      - ./data:/tmp
+
+    tty: true
+    environment:
+      TZ: "Asia/Shanghai"
+    command: /tmp/start.sh

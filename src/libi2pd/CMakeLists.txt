@@ -1,0 +1,8 @@
+aux_source_directory(. LIBSRC)
+set(LIB i2pd)
+set(THIRDLIB /lib/x86_64-linux-gnu)
+set(THIRDINC /usr/include)
+add_library(${LIB} STATIC ${LIBSRC})
+target_link_directories(${LIB} PUBLIC ${THIRDLIB})
+target_include_directories(${LIB} PUBLIC ${THIRDINC})
+target_link_libraries(${LIB} PUBLIC boost_system boost_thread boost_date_time boost_program_options boost_filesystem ssl crypto pthread z dl)
